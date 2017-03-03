@@ -82,7 +82,7 @@ def getInfo(link, user_agent):
 		issueDate = hiringInfo.find("em",{"class":"i4"}).parent.get_text()
 	
 	writer.writerow((positionName,location,salary,companyName,companyInfo,positionInfoList,classification,keyWord,companyWelfare,experience,education,hiringNumber,issueDate))
-	return True	
+	return True
 
 def getLinks(startPage, user_agent):
 	links = []
